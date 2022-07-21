@@ -1,0 +1,170 @@
+.about {
+  text-align: center;
+  margin-top: -6px;
+  text-transform: capitalize;
+  .up {
+    background: url(../images/choosing-bg.jpg) center center;
+    padding: 100px;
+    .v-line {
+      height: 100px;
+      width: 1px;
+      background-color: rgba($color: $f, $alpha: 0.1);
+      margin: -100px auto 0;
+    }
+    h4.title {
+      font-size: 18px;
+      font-weight: 500;
+      width: fit-content;
+      padding: 15px 30px;
+      margin: 0 auto 70px;
+      border: 1px solid rgba($color: $f, $alpha: 0.1);
+    }
+    .list {
+      display: flex;
+      justify-content: space-evenly;
+      .choose-item {
+        text-transform: uppercase;
+        height: 100%;
+        cursor: pointer;
+        .title {
+          font-size: $p;
+        }
+        .choose-link {
+          margin: auto;
+          display: inline-block;
+          .icon {
+            padding: 10px;
+            width: 0;
+            height: 0;
+            border: none;
+            position: relative;
+            box-sizing: border-box;
+            border: 3px solid transparent;
+          }
+          .icon::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $f;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .choose-item.active {
+        .title {
+          color: $y;
+          margin-top: 0;
+        }
+        .choose-link {
+          .icon {
+            border-color: $y;
+          }
+          .icon::after {
+            width: 15px;
+            height: 15px;
+            background-color: $y;
+          }
+        }
+      }
+    }
+    .contain {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      .box {
+        text-align: left;
+        .title {
+          margin: 60px 0;
+        }
+        .desc {
+          font-size: 15px;
+          line-height: 25px;
+          .link {
+            color: $l;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .dawn {
+    .bg {
+      background: url(../images/coming-soon-bg.jpg);
+      background-size: cover;
+      padding: 150px 0;
+      .left {
+        .title {
+          text-align: left;
+          text-transform: none;
+          font-weight: bold;
+          margin: 50px 0;
+          span {
+            color: $y;
+          }
+        }
+        .title::first-letter {
+          text-transform: capitalize;
+        }
+        .time-box {
+          .time {
+            background-color: rgba($color: $f, $alpha: 0.1);
+            width: 21%;
+            height: 140px;
+            text-align: center;
+            .title {
+              text-align: inherit;
+              margin: 15px 0 0;
+              height: 70px;
+              font-size: 48px;
+              line-height: 70px;
+            }
+            .type {
+              color: $y;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .right {
+        .text {
+          color: $f;
+          background-color: rgba($color: $f, $alpha: 0.2);
+          font-size: 14px;
+          padding: 50px;
+          margin: 0;
+        }
+        form {
+          background-color: rgba($color: $f, $alpha: 0.1);
+          text-align: center;
+          width: 100%;
+          padding: 60px 40px;
+          fieldset {
+            input {
+              background-color: rgba($color: $f, $alpha: 0.1);
+              box-shadow: none;
+              border: none;
+              border-radius: 0;
+              outline: none;
+              margin-bottom: 20px;
+              caret-color: $f;
+            }
+            input:focus {
+              color: $f;
+            }
+            input::placeholder {
+              color: $f;
+              text-transform: capitalize;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bttn::before {
+  content: "GET IT NOW";
+  }
+}

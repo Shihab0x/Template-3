@@ -1,0 +1,62 @@
+.contact {
+  padding: 80px 0 50px;
+  background-image: url(../images/contact-bg.jpg);
+  .header {
+    color: #fff;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba($color: #fff, $alpha: 0.1);
+  }
+  .header::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    top: -81px;
+    left: 50%;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  form {
+    width: 500px;
+    padding: 30px;
+    margin: 80px 20px;
+    gap: 4%;
+    justify-content: space-between;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    div {
+      padding: 0;
+      margin-bottom: 20px;
+      textarea {
+        min-height: 200px;
+      }
+      input,
+      textarea {
+        border: none;
+        border-radius: 0;
+        background-color: rgba($color: #fff, $alpha: 0.1);
+      }
+      input:focus,
+      textarea:focus {
+        color: #fff;
+        caret-color: #fff;
+        box-shadow: none;
+        background-color: rgba($color: #fff, $alpha: 0.1);
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #fff;
+      }
+    }
+    .input {
+      width: 48%;
+      height: 50px;
+    }
+    .bttn::before {
+      content: "send massage now";
+    }
+  }
+}

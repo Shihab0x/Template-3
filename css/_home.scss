@@ -1,0 +1,128 @@
+$y: #f5a425;
+$b: #162239;
+$f: #ffffff;
+
+$p: 13px;
+
+.contant {
+  width: 100%;
+  position: relative;
+  top: 0;
+  text-transform: uppercase;
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0;
+    background-color: rgba($color: $b, $alpha: 0.95);
+    .navbar-brand {
+      color: $y;
+      font-size: 36px;
+      font-weight: 600;
+    }
+    .navbar-nav {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      .dropdown-menu {
+        padding: 0;
+        margin-top: 20px;
+        .dropdown-item {
+          color: $f;
+          height: 50px;
+          line-height: 40px;
+          font-size: 13px;
+          background-color: $b;
+          border-bottom: 1px solid #121212;
+        }
+        .dropdown-item:hover {
+          color: $y;
+          background-color: $b;
+        }
+      }
+      .dropdown-menu.show {
+        margin-top: 0;
+      }
+      .nav-item {
+        padding: 20px 0;
+        .nav-link {
+          color: $f;
+          font-size: $p;
+          font-weight: 600;
+          border: 2px solid transparent;
+          .nav-icon {
+            margin-left: 5px;
+          }
+        }
+      }
+      .nav-link.active,
+      .nav-link:hover {
+        border-color: $y;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+  .home {
+    width: 100%;
+    position: relative;
+    .video {
+      width: 100%;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba($color: $b, $alpha: 0.85);
+      text-align: center;
+      .text {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+      }
+      .wraper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          .box {
+            width: 30%;
+            background-color: $b;
+            text-align: left;
+            padding: 35px;
+            transition: all 500ms linear;
+            transform: translateY(200px);
+            .title {
+              text-align: center;
+              margin-bottom: 35px;
+            }
+            .link {
+              color: $f;
+              font-size: $p;
+              font-weight: 600;
+              text-decoration: none;
+            }
+          }
+          .box:hover {
+            background-color: $y;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+  .bttn::before {
+  content: "DISCOVER MORE";
+  }
+}

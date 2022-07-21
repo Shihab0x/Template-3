@@ -1,0 +1,39 @@
+$y: #f5a425;
+$b: #162239;
+$f: #ffffff;
+$l: #3cf;
+
+$p: 13px;
+
+:root {
+  text-transform: capitalize;
+}
+
+.header,
+title {
+  text-transform: capitalize;
+}
+
+.header {
+  color: $f;
+  font-size: 10vh;
+  font-weight: 700;
+  margin: 30px;
+  em {
+    color: $y;
+  }
+}
+.title {
+  color: $f;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.desc {
+  color: $f;
+  font-size: $p;
+  text-align: justify;
+}
+.icon {
+  color: $f;
+}
+

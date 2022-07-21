@@ -1,0 +1,52 @@
+$y: #f5a425;
+$b: #162239;
+$f: #ffffff;
+
+$p: 13px;
+
+
+.bttn {
+  color: $b;
+  font-size: $p;
+  font-weight: 600;
+  position: relative;
+  padding: 15px 20px;
+  letter-spacing: 2px;
+  background-color: $y;
+  border: 1px solid $y;
+  text-decoration: none;
+  transition: color 10ms 1s ease;
+}
+
+.bttn::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $f;
+  z-index: 1;
+  padding: 15px 20px;
+  position: relative;
+  transition: all 1s linear;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.bttn::after {
+  content: "";
+  color: $f;
+  width: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  position: absolute;
+  background-color: $f;
+  transition: all 1s linear;
+}
+
+.bttn:hover::before {
+  color: $y;
+}
+.bttn:hover::after {
+  width: 100%;
+}
